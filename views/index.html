@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>Andela Student thing</title>
+	<link rel="stylesheet" type="text/css" href="static/css/app.css" />
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	
+	<div id="app">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		    <div class="container">
+		        <!-- Brand and toggle get grouped for better mobile display -->
+		        <div class="navbar-header">
+		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		                <span class="sr-only">Toggle navigation</span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		            </button>
+		            <router-link to="/"  class="navbar-brand">Student Manager</router-link>
+		        </div>
+		        <!-- Collect the nav links, forms, and other content for toggling -->
+		        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		            <ul class="nav navbar-nav pull-right">
+		                <li>
+		                    <router-link class="main" to="/home">Home</router-link>
+		                </li>
+		                <li class="dropdown">
+				          	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				          		Students
+				          		<span class="caret"></span>
+				      		</a>
+				          	<ul class="dropdown-menu">
+					            <li> <router-link to="/student/create">Create Student</router-link></li>
+					            <li> <router-link to="/student/all">All Students</router-link></li>
+				          	</ul>
+				        </li>
+		            </ul>
+		        </div>
+		        <!-- /.navbar-collapse -->
+		    </div>
+		    <!-- /.container -->
+		</nav>
+
+		 <router-view></router-view>
+	</div>
+</body>
+
+<script type="text/javascript" src="static/js/app.js"></script>
+</html>

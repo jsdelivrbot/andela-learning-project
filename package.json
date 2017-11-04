@@ -1,0 +1,45 @@
+{
+  "name": "andela-learning-project",
+  "version": "1.0.0",
+  "description": "Student management app for ALC challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "parallelshell \"node-sass --watch assets/scss/app.scss bundle/css/app.css\" \" webpack --progress --hot --watch \" \"supervisor serve.js\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faradayyg/andela-learning-project.git"
+  },
+  "keywords": [
+    "vuejs",
+    "webpack",
+    "andela"
+  ],
+  "author": "Friday Godswill U @faradayyg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/faradayyg/andela-learning-project/issues"
+  },
+  "homepage": "https://github.com/faradayyg/andela-learning-project#readme",
+  "dependencies": {
+    "axios": "^0.17.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "bootstrap": "^3.3.7",
+    "bootstrap-sass": "^3.3.7",
+    "express": "^4.16.2",
+    "express-validator": "^4.3.0",
+    "jquery": "^3.2.1",
+    "knex": "^0.13.0",
+    "node-sass": "^4.5.3",
+    "parallelshell": "^3.0.2",
+    "sqlite3": "^3.1.13",
+    "sweetalert": "^2.0.8",
+    "vue": "^2.5.2",
+    "vue-loader": "^13.3.0",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.2",
+    "webpack": "^3.8.1"
+  }
+}
