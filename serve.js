@@ -4,6 +4,7 @@ const path 			= require('path');
 const api_routes 	= require('./routes/api')();
 const bodyParser 	= require('body-parser');
 const validator 	= require('express-validator');
+const port 			= process.env.PORT || 3000
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
@@ -17,6 +18,6 @@ app.get('*',function(req,res){
 	res.sendFile(path.resolve(__dirname,'./views/index.html'));
 });
 
-app.listen(39072,function(){
-	console.log('Running on :39072...');
+app.listen(port,function(){
+	console.log('Running on :'+port);
 });
